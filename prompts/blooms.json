@@ -1,0 +1,20 @@
+{
+    "Remembering": {
+        "prompt": "Generate a question that asks the student to recall or recognize a specific fact, term, or definition from the provided text. The question should focus on essential information like names, dates, or key concepts."
+    },
+    "Understanding": {
+        "prompt": "Create a question that tests the student's comprehension of the main idea or concept from the text. The question should require the student to paraphrase, summarize, or explain the text's meaning in their own words."
+    },
+    "Applying": {
+        "prompt": "Write a question that requires the student to apply knowledge from the text to a real-world scenario or a hypothetical situation. The question should ask how the concept or principle could be used or demonstrated in practice."
+    },
+    "Analyzing": {
+        "prompt": "Create a question that asks the student to examine relationships or break down a complex concept from the text into its components. The student should be asked to compare, contrast, categorize, or identify patterns."
+    },
+    "Evaluating": {
+        "prompt": "Formulate a question that challenges the student to critically assess the strengths and weaknesses, or the effectiveness, of an argument, theory, or idea presented in the text. Ask the student to provide reasoning behind their evaluation."
+    },
+    "Creating": {
+        "prompt": "Generate a question that encourages the student to propose new ideas or solutions based on the concepts in the text. The question should prompt the student to innovate, design, or synthesize information to create something original."
+    }
+}

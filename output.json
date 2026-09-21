@@ -1,0 +1,59 @@
+{
+    "questions": [
+      {
+        "question": "Which sugar is found in DNA?",
+        "options": [
+          "Ribose",
+          "Deoxyribose",
+          "Glucose",
+          "Fructose"
+        ],
+        "answer": "Deoxyribose",
+        "explanation": "The text explicitly states that in deoxyribonucleic acid (DNA), the sugar is deoxyribose."
+      },
+      {
+        "question": "What are the four major nitrogenous bases found in DNA?",
+        "options": [
+          "Adenine, Cytosine, Guanine, Uracil",
+          "Adenine, Cytosine, Guanine, Thymine",
+          "Adenine, Guanine, Cytosine, Ribose",
+          "Thymine, Uracil, Cytosine, Deoxyribose"
+        ],
+        "answer": "Adenine, Cytosine, Guanine, Thymine",
+        "explanation": "The text lists adenine (A), cytosine (C), guanine (G), and thymine (T) as the four bases in DNA."
+      },
+      {
+        "question": "What is the basic repeat unit of a DNA strand called?",
+        "options": [
+          "Nucleoside",
+          "Nucleotide",
+          "Amino acid",
+          "Polypeptide"
+        ],
+        "answer": "Nucleotide",
+        "explanation": "The text defines a nucleotide as a nucleoside with a phosphate group attached, and this is the basic repeat unit of a DNA strand."
+      },
+      {
+        "question": "In what cellular location does polypeptide synthesis primarily occur?",
+        "options": [
+          "Nucleus",
+          "Mitochondria and chloroplasts",
+          "Ribosomes",
+          "Golgi apparatus"
+        ],
+        "answer": "Ribosomes",
+        "explanation": "The text states that polypeptide synthesis occurs at ribosomes, either in the cytoplasm or inside mitochondria and chloroplasts."
+      },
+      {
+        "question": "What is the name of the process by which DNA is used as a template to synthesize RNA?",
+        "options": [
+          "Translation",
+          "Replication",
+          "Transcription",
+          "Splicing"
+        ],
+        "answer": "Transcription",
+        "explanation": "The text describes transcription as the process where DNA serves as a template for RNA synthesis."
+      }
+    ]
+  }

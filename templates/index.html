@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Question Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Input Panel -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h1 class="text-2xl font-bold mb-6">Question Generator</h1>
+                
+                <form id="generatorForm" onsubmit="handleSubmit(event)" class="space-y-6">
+                    <!-- File Inputs -->
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">PDF Upload</label>
+                            <input type="file" name="pdfFile" accept=".pdf" class="mt-1 block w-full">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Image Upload</label>
+                            <input type="file" name="imageFile" accept="image/*" class="mt-1 block w-full">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">URL</label>
+                            <input type="url" name="imageUrl" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                        </div>
+                    </div>
+
+                    <!-- Context Input -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Context</label>
+                        <textarea name="context" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm"></textarea>
+                    </div>
+
+                    <!-- Configuration -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Bloom's Level</label>
+                            <select name="bloom_level" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                                {% for level in bloom_levels %}
+                                <option value="{{ level }}">{{ level }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Question Type</label>
+                            <select name="question_type" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                                {% for type in question_types %}
+                                <option value="{{ type }}">{{ type }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Difficulty Level</label>
+                            <select name="difficulty_level" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                                {% for level in difficulty_levels %}
+                                <option value="{{ level }}">{{ level }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Number of Questions</label>
+                            <input type="number" name="num_questions" min="1" max="10" value="5" required class="mt-1 block w-full rounded-md border-black-300 shadow-sm">
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                            Generate Questions
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Chat Panel -->
+        
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div id="chat-container" class="h-[600px] overflow-y-auto space-y-4">
+                    <div class="message assistant">
+                        Welcome! Upload a file or enter context to generate questions.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .message {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .message.user {
+            background-color: #f3f4f6;
+            margin-left: 2rem;
+        }
+        .message.assistant {
+            background-color: #dbeafe;
+            margin-right: 2rem;
+        }
+        .question {
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 1rem;
+        }
+        #chat-container {
+            height: 600px; /* Fixed height for the chat container */
+            overflow-y: auto; /* Allow vertical scrolling */
+            padding: 1rem; /* Optional padding for aesthetics */
+            border: 1px solid #e5e7eb; /* Optional border for visual separation */
+            border-radius: 0.5rem; /* Rounded corners */
+            background-color: #ffffff; /* Background color*/
+            /* background: rgb(2,0,36); */
+            /* background: linear-gradient(126deg, rgba(2,0,36,1) 25%, rgba(76,9,121,1) 80%, rgba(0,212,255,1) 100%);  */
+              } 
+    </style>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

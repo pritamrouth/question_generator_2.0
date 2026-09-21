@@ -1,0 +1,14 @@
+{
+    "MCQ": {
+        "prompt": "Create a multiple-choice question based on the provided text. The question should have one correct answer and three plausible distractors. Ensure that the distractors are related to the content of the text and test potential misconceptions. The options should be distinct and non-duplicate, ensuring variety. One option should be clearly correct, while the others should be commonly confused alternatives."
+    },
+    "Fill_in_the_Blanks": {
+        "prompt": "Generate a fill-in-the-blank question based on the text. The question should have a short sentence or phrase with a blank space where a key term or concept is missing. The blank space should be clearly indicated and contain only one word or short phrase that is directly drawn from the content of the text. Ensure that the context around the blank makes it easy for the student to infer the correct word."    
+    },
+    "True_False": {
+        "prompt": "Write a True/False question based on the content of the text. The statement should be directly supported or contradicted by the information in the text. Ensure that the statement is clear and unambiguous, testing the student’s understanding of the text's accuracy."
+    },
+    "One_line_Answer": {
+        "prompt":  "Generate a one-line answer question that asks for a concise fact, definition, or explanation drawn from the text. The student’s answer should be specific, clear, and unambiguous, requiring only one short sentence or phrase."
+    }
+}

@@ -1,0 +1,17 @@
+flask==3.0.3
+nltk==3.6.3
+python-docx==0.8.11
+PyPDF2==3.0.1
+python-dotenv==1.0.1
+Pillow==10.4.0
+pytesseract==0.3.10
+#playwright==1.48.0
+flask_cors==4.0.0
+crawl4ai==0.3.746
+langchain_core==0.3.21
+pydantic==2.10.2
+pydantic-core==2.27.1
+langchain-google-genai==2.0.6
+langchain_community==0.3.8
+langchain==0.3.9
+

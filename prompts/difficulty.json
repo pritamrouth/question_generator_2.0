@@ -1,0 +1,18 @@
+{
+    "Easy": {
+        "prompt": "Generate simple, direct questions that assess basic knowledge and recall.",
+        "example": "Create a straightforward question with a single, clear answer."
+    },
+
+    "Moderate": {
+        "prompt": "Generate moderately challenging questions that assess understanding and application.",
+        "example": "Create a question that requires explanation or applying concepts in familiar scenarios."
+    },
+
+    "Hard": {
+        "prompt": "Generate complex and challenging questions that assess higher-order thinking skills such as analysis, evaluation, or synthesis.",
+        "example": "Create a question that involves multiple steps or requires critical thinking to derive an answer."
+    }
+}
+
+  
